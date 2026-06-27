@@ -1,1 +1,0 @@
-Enable GitHub Pages from the repository root.
