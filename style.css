@@ -7,7 +7,11 @@ body{
 section{min-height:100vh;display:none;padding:40px 20px;}
 .active{display:flex;align-items:center;justify-content:center}
 .hidden{display:none}
-.content{max-width:650px;text-align:center}
+.content{
+    max-width:650px;
+    margin:0 auto;
+    text-align:center;
+}
 h1,h2{font-family:'Cormorant Garamond',serif;color:#355C48}
 h1{font-size:3.4rem;margin-bottom:20px}
 h2{font-size:2.4rem;margin:40px 0 10px}
@@ -16,8 +20,43 @@ button{margin-top:35px;background:#355C48;color:#fff;border:none;border-radius:9
 button:hover{transform:scale(1.04)}
 #page1,#page2{text-align:center}
 img{width:100%;max-width:900px;display:block;margin:0 auto;border-radius:18px;box-shadow:0 20px 45px rgba(0,0,0,.15)}
-.ending{padding:50px 0 80px}
-.fade{animation:f .6s}
+/* ---------- Page 1 Message ---------- */
+
+.cardMessage{
+    max-width:720px;
+    margin:60px auto 35px;
+    padding:0 20px;
+    text-align:center;
+}
+
+.cardMessage p{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.35rem;
+    font-style:italic;
+    font-weight:500;
+    color:#5B5B5B;
+    line-height:1.9;
+}
+/* ---------- Page 2 Ending ---------- */
+
+.ending{
+    max-width:800px;
+    margin:0 auto;
+    padding:60px 20px 80px;
+    text-align:center;
+}
+
+.ending h2{
+    font-size:2.2rem;
+    margin-bottom:25px;
+    color:#355C48;
+}
+
+.ending p{
+    font-size:1.2rem;
+    line-height:2;
+    color:#4A4A4A;
+}.fade{animation:f .6s}
 @keyframes f{from{opacity:0}to{opacity:1}}
 
 .navButtons{display:flex;justify-content:center;gap:15px;margin-top:30px;flex-wrap:wrap}.spotifyBtn{display:inline-block;margin-top:25px;padding:15px 28px;border-radius:999px;background:#1DB954;color:#fff;text-decoration:none;font-weight:600;transition:.3s}.spotifyBtn:hover{transform:scale(1.05)}#heart-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:9999}.heart{position:absolute;top:-50px;color:#fff;opacity:.85;animation:fall linear forwards;text-shadow:0 0 10px rgba(255,255,255,.8),0 0 20px rgba(255,255,255,.6)}@keyframes fall{0%{transform:translateY(-50px) translateX(0) rotate(0);opacity:0}10%{opacity:1}100%{transform:translateY(120vh) translateX(40px) rotate(360deg);opacity:0}}
