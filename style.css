@@ -26,7 +26,7 @@ img{
     margin:0 auto;
     border-radius:18px;
     box-shadow:0 20px 45px rgba(0,0,0,.15);
-    animation:cardReveal .9s ease;
+    animation:cardReveal 1.35s cubic-bezier(.22,.61,.36,1);
 }/* ---------- Page 1 Message ---------- */
 
 .cardMessage{
@@ -72,16 +72,36 @@ img{
     line-height:1.9;
 }
 .fade{
-    animation:f .85s ease;
+    animation:f 1s ease;
+}
+
+@keyframes f{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 @keyframes cardReveal{
+
     0%{
         opacity:0;
-        transform:translateY(25px) scale(.97);
+        transform:
+            translateY(35px)
+            scale(.96);
+    }
+
+    70%{
+        opacity:1;
     }
 
     100%{
         opacity:1;
-        transform:translateY(0) scale(1);
+        transform:
+            translateY(0)
+            scale(1);
     }
+
+}
 .navButtons{display:flex;justify-content:center;gap:15px;margin-top:30px;flex-wrap:wrap}.spotifyBtn{display:inline-block;margin-top:25px;padding:15px 28px;border-radius:999px;background:#1DB954;color:#fff;text-decoration:none;font-weight:600;transition:.3s}.spotifyBtn:hover{transform:scale(1.05)}#heart-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:9999}.heart{position:absolute;top:-50px;color:#fff;opacity:.85;animation:fall linear forwards;text-shadow:0 0 10px rgba(255,255,255,.8),0 0 20px rgba(255,255,255,.6)}@keyframes fall{0%{transform:translateY(-50px) translateX(0) rotate(0);opacity:0}10%{opacity:1}100%{transform:translateY(120vh) translateX(40px) rotate(360deg);opacity:0}}
