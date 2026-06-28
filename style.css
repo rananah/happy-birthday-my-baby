@@ -12,10 +12,18 @@ section{min-height:100vh;display:none;padding:40px 20px;}
     margin:0 auto;
     text-align:center;
 }
-h1,h2{font-family:'Cormorant Garamond',serif;color:#355C48}
+h1,h2{
+    font-family:'Cormorant Garamond',serif;
+    color:#355C48;
+    font-weight:700;
+}
 h1{font-size:3.4rem;margin-bottom:20px}
 h2{font-size:2.4rem;margin:40px 0 10px}
-p{font-size:1.2rem;line-height:1.8}
+p{
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#444444;
+}
 button{margin-top:35px;background:#355C48;color:#fff;border:none;border-radius:999px;padding:16px 34px;font-size:1rem;cursor:pointer;transition:.25s}
 button:hover{transform:scale(1.04)}
 #page1,#page2{text-align:center}
@@ -41,7 +49,7 @@ img{
     font-size:1.35rem;
     font-style:italic;
     font-weight:500;
-    color:#5B5B5B;
+    color:#4A4A4A;
     line-height:1.9;
 }
 /* ---------- Page 2 Ending ---------- */
@@ -68,16 +76,16 @@ img{
     font-size:1.35rem;
     font-style:italic;
     font-weight:500;
-    color:#5B5B5B;
+    color:#4A4A4A;
     line-height:1.9;
 }
 .fade{
-    animation:f 1s ease;
+    animation:pageFade .6s ease-out;
 }
 
-@keyframes f{
+@keyframes pageFade{
     from{
-        opacity:0;
+        opacity:.85;
     }
     to{
         opacity:1;
